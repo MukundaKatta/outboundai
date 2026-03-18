@@ -1,27 +1,41 @@
-# OutboundAI
+# outboundai
 
-> Autonomous AI Sales Development Representative
+**Autonomous AI Sales Development Representative**
 
-## Overview
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-OutboundAI is an AI-powered SDR that autonomously prospects, crafts personalized outreach, follows up, and books meetings. It researches leads, writes contextual emails, handles objections, and schedules calls.
-
-## Key Features
-
-- ****
-
-## Tech Stack
-
-Python,Claude API,FastAPI,PostgreSQL,React
-
-## Getting Started
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/outboundai.git
-cd outboundai
-pip install -e .
+npm install
 ```
 
----
+## Quick Start
+```typescript
+import { Outboundai } from "./outboundai";
+const instance = new Outboundai()
+const r = await instance.process({ input: 'test' })
+```
 
-**Mukunda Katta** · [Officethree Technologies](https://github.com/MukundaKatta/Office3) · 2026
+## CLI
+```bash
+npx tsx src/cli.ts status
+npx tsx src/cli.ts run --input "data"
+```
+
+## API
+| Method | Description |
+|--------|-------------|
+| `process()` | Process |
+| `analyze()` | Analyze |
+| `transform()` | Transform |
+| `validate()` | Validate |
+| `export()` | Export |
+| `get_stats()` | Get stats |
+
+## Test
+```bash
+npx vitest
+```
+
+## License
+(c) 2026 Officethree Technologies. All Rights Reserved.
